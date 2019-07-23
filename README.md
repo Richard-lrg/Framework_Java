@@ -2,7 +2,7 @@
 there are some mainstream frameworks for java  
 
 ### No.1  Quartz
-一个专门用于任务调度管理的框架，scheduledemo实现了cluster模式下的任务调度管理。  
+一个专门用于任务调度管理的框架，scheduledemo实现了cluster模式下的quartz任务调度管理。  
 优点：  
   1.实现了多实例间的负载均衡  
   2.高可用性（故障切换）  
