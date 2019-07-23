@@ -1,5 +1,5 @@
 # Framework_Java
-there are some mainstream frameworks for java \
+there are some mainstream frameworks for java  
 
 ### No.1  Quartz
 一个专门用于任务调度管理的框架，scheduledemo实现了cluster模式下的任务调度管理。  
