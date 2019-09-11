@@ -23,4 +23,5 @@ there are some mainstream frameworks for java
 4. 熔断机制
 5. Jpa，data-reset
 6. feignClient,声明式的web service客户端
+7. RocketMQ消息中间件，生产者消费者demo
 
