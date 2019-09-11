@@ -27,8 +27,8 @@ public class ReservationServiceApplication {
 	@Bean
 	ApplicationRunner sampleData(IUserDAO iUserDAO) {
 		return applicationArguments -> {
-			Stream.of("lrg","pqt","wr","dt","qjy")
-					.forEach(name -> iUserDAO.save(new User(name, "this is a user")));
+//			Stream.of("lrg","pqt","wr","dt","qjy")
+//					.forEach(name -> iUserDAO.save(new User(name, "this is a user")));
 			iUserDAO.findAll().forEach(System.out::println);
 		};
 	}
