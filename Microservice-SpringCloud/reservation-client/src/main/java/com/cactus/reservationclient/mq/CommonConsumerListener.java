@@ -18,18 +18,25 @@ import java.util.List;
 
 @Service
 public class CommonConsumerListener implements MessageListenerConcurrently {
+
+    // 为避免有异常被漏掉，将捕获级别设置为Throwable。（Exception与Error均继承于Throwable）
+    // 进而保证listener成功返回CONSUME_SUCCESS状态，避免重复消费
     @Override
     public ConsumeConcurrentlyStatus consumeMessage(List<MessageExt> msgList, ConsumeConcurrentlyContext consumeConcurrentlyContext) {
-        System.out.println("start consume");
-        for (MessageExt msgExt : msgList) {
-            try {
-                String msg = new String(msgExt.getBody(), "utf-8");
-                Date date = new Date();
-                System.out.println(date + " consume msg : " + msg);
-            } catch (UnsupportedEncodingException e) {
-                e.printStackTrace();
+        try {
+            System.out.println("start consume");
+            for (MessageExt msgExt : msgList) {
+                try {
+                    String msg = new String(msgExt.getBody(), "utf-8");
+                    Date date = new Date();
+                    System.out.println(date + Thread.currentThread().getName() + " consume msg : " + msg);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
             }
+        } catch (Throwable e) {
+            e.printStackTrace();
         }
-        return null;
+        return ConsumeConcurrentlyStatus.CONSUME_SUCCESS;
     }
 }
