@@ -25,3 +25,9 @@ there are some mainstream frameworks for java
 6. feignClient,声明式的web service客户端
 7. RocketMQ消息中间件，生产者消费者demo
 
+### NO.3 Spring系列demo
+Spring系列相关实践，包括
+1. Ioc、Di
+2. java配置文件
+3. AOP
+
