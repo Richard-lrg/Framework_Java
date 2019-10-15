@@ -1,4 +1,4 @@
-package com.cactus.aopdemo;
+package com.cactus.demo.aop;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -12,7 +12,7 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
  */
 
 @Configuration
-@ComponentScan("com.cactus.aopdemo")
+@ComponentScan("com.cactus.demo.aop")
 @EnableAspectJAutoProxy
 public class AopConfig {
 }

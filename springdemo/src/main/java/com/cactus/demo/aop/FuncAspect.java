@@ -1,4 +1,4 @@
-package com.cactus.aopdemo;
+package com.cactus.demo.aop;
 
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.After;
@@ -26,7 +26,7 @@ public class FuncAspect {
 
     // 使用注解拦截-start
 
-    @Pointcut("@annotation(com.cactus.aopdemo.Action)")
+    @Pointcut("@annotation(com.cactus.demo.aop.Action)")
     public void annotationPointCut(){};
 
     // 可通过反射获得注解上的属性，然后做自定义操作
@@ -47,14 +47,14 @@ public class FuncAspect {
 
     // 使用方法规则拦截-start
 
-    @Before("execution(* com.cactus.aopdemo.FuncTwoService.*(..))")
+    @Before("execution(* com.cactus.demo.aop.FuncTwoService.*(..))")
     public void beforef(JoinPoint joinPoint) {
         MethodSignature signature = (MethodSignature)joinPoint.getSignature();
         Method method = signature.getMethod();
         System.out.println("方法规则拦截-before， methodName:" + method.getName());
     }
 
-    @After("execution(* com.cactus.aopdemo.FuncTwoService.*(..))")
+    @After("execution(* com.cactus.demo.aop.FuncTwoService.*(..))")
     public void afterf(JoinPoint joinPoint) {
         MethodSignature signature = (MethodSignature)joinPoint.getSignature();
         Method method = signature.getMethod();

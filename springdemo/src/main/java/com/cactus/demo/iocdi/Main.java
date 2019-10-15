@@ -1,4 +1,4 @@
-package com.cactus.iocdidemo;
+package com.cactus.demo.iocdi;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

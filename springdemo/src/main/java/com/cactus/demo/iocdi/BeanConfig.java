@@ -1,4 +1,4 @@
-package com.cactus.iocdidemo;
+package com.cactus.demo.iocdi;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -12,6 +12,6 @@ import org.springframework.context.annotation.Configuration;
  */
 
 @Configuration
-@ComponentScan("com.cactus.iocdidemo")
+@ComponentScan("com.cactus.demo.iocdi")
 public class BeanConfig {
 }

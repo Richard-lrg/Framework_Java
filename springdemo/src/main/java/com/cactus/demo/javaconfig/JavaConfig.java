@@ -1,7 +1,6 @@
-package com.cactus.javaconfigdemo;
+package com.cactus.demo.javaconfig;
 
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 /**

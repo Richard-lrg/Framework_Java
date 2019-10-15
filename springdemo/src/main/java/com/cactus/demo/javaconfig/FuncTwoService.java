@@ -1,4 +1,4 @@
-package com.cactus.javaconfigdemo;
+package com.cactus.demo.javaconfig;
 
 /**
  * Created by liruigao
