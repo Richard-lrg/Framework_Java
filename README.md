@@ -31,3 +31,4 @@ Spring系列相关实践，包括
 2. java配置文件
 3. AOP
 4. Spring常用配置（包括：scope、El、Bean的生命周期、Profile、Event）
+5. Spring高级话题（包括：Aware, 多线程，condition, schedule）
