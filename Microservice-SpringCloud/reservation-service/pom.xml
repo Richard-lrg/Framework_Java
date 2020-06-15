@@ -20,7 +20,7 @@
 		<rocketmq.version>3.5.9</rocketmq.version>
 		<commonslang3.verison>3.1</commonslang3.verison>
 		<common.io.version>2.4</common.io.version>
-		<commons.collections.version>3.2.1</commons.collections.version>
+		<commons.collections.version>3.2.2</commons.collections.version>
 	</properties>
 
 	<dependencies>
