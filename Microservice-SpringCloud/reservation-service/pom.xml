@@ -19,7 +19,7 @@
 		<spring-cloud.version>Edgware.RELEASE</spring-cloud.version>
 		<rocketmq.version>3.5.9</rocketmq.version>
 		<commonslang3.verison>3.1</commonslang3.verison>
-		<common.io.version>2.4</common.io.version>
+		<common.io.version>2.7</common.io.version>
 		<commons.collections.version>3.2.1</commons.collections.version>
 	</properties>
 
